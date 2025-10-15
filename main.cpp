@@ -2,7 +2,7 @@
  * @Author: Zichu Zhao 965927155@qq.com
  * @Date: 2025-10-14 14:55:49
  * @LastEditors: Zichu Zhao 965927155@qq.com
- * @LastEditTime: 2025-10-15 13:14:24
+ * @LastEditTime: 2025-10-15 13:26:00
  * @FilePath: /Assignment-3/main.cpp
  * @Description: Hash table linear probing implementation for assignment.
  *               26 slots a-z, keys are lowercase words, hash = last char.
@@ -80,7 +80,7 @@ void deleteWord(string w){
         // cout<<"[debug] cannot find " << w << " to delete" << endl;
         return; // not found
     }
-    status[pos] = 0; //tombstone
+    status[pos] = 1; //tombstone
     words[pos] = "";
     // cout<<"[debug] deleted " << w << " at " << pos << endl;
 }
